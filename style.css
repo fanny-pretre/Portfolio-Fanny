@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&family=Oswald&family=Source+Sans+3&display=swap');
+
+:root {
+    --primary-color: #542434;
+    --secondary-color: white;
+    --terciary-color: black;
+    --quaternary-color: #d7a2b2;
+    --primary-font: 'inconsolata', monospace;
+    --secondary-font: 'karla', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+
+ul {
+    padding: 1rem 2rem;
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    gap: 30px;
+    height: 3vh;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-shadow: 0 0 30px #343b61;
+}
+
+ul li a:hover {
+    color: var(--quaternary-color);
+    font-weight: bolder;
+}
+
+/* Pour la home */
+
+.home-Body {
+    width: 100vw;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.home-Text {
+    margin: 0 1rem;
+    width: 30vw;
+}
+
+.home-Text h1 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.home-Text h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.home-Background {
+    background-image: url("assets/Profil.jpeg");
+    background-position: center;
+    width: 70vw;
+    height: 96vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-Background p {
+    display: block;
+}
+
+.home-Background-Text {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0 2rem;
+}
+
+/* Pour la section Projet */
+
+.project-Body {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    height: 96vh;
+
+}
+
+.project-Image {
+    width: 40vw;
+    height: auto;
+    background-image: url("assets/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.project-Texts {
+    margin: 0 2rem;
+    height: 96vh;
+    align-items: center;
+}
+
+.project-Flex-Text {
+    font-size: 1rem;
+    gap: 5px;
+    margin: 1rem 0;
+}
+
+
+/*responsive*/
+
+/*Desktop*/
+@media screen and (min-width : 992px) {
+
+    ul {
+        padding: 1rem 4rem;
+        display: flex;
+        background-color: var(--primary-color);
+        justify-content: right;
+        gap: 50px;
+        height: 3vh;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-shadow: 0 0 30px #343b61;
+    }
+
+    ul li a:hover {
+        color: var(--quaternary-color);
+        font-weight: bolder;
+    }
+
+    /* Pour la home */
+
+    .home-Body {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 97vh;
+
+    }
+
+    .home-Title {
+        width: 30vw;
+        height: 97vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-Text {
+        margin: 0 2rem;
+    }
+
+    .home-Text h1 {
+        font-family: var(--primary-font);
+        color: var(--primary-color);
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .home-Text h2 {
+        font-family: var(--secondary-font);
+        font-size: 3.5rem;
+        text-transform: uppercase;
+    }
+
+
+    .home-Background {
+        width: 70vw;
+        height: 97vh;
+        background-image: url("assets/Profil.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .home-Background p {
+        display: block;
+    }
+
+    .home-Background-Text {
+        font-family: var(--secondary-font);
+        color: var(--secondary-color);
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 0 2rem;
+    }
+
+    /* Pour la section Projet */
+
+    .project-Body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        height: 95vh;
+
+    }
+
+    h3 {
+        font-size: 6rem;
+    }
+
+    .project-Texts {
+        margin: 0 2rem;
+        height: 95vh;
+    }
+
+    .project-Flex-Text {
+        display: flex;
+        font-size: 1.5rem;
+        gap: 5px;
+        margin: 20rem 0;
+    }
+
+    .project-Image {
+        width: 40vw;
+        height: 90vh;
+        background-image: url("assets/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 1rem 0;
+    }
+
+
+
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
