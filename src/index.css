@@ -1,0 +1,322 @@
+/*GENERIQUES*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --primary-font: "Oswald", sans-serif;
+  --secondary-font: "Source Sans 3", sans-serif;
+  --color-1: white;
+  --color-2: #003b4a;
+  --color-3: #f2d750;
+  --color-4: #a6702e;
+  --color-5: #730202;
+  --color-6: #e992b2;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--secondary-font);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.card {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+/*HOME*/
+
+.home-Flex {
+  display: flex;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+  height: 5vh;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-Div {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+}
+
+.nav-Logo {
+  width: 25%;
+}
+
+.home-Left {
+  background-color: var(--color-5);
+  width: 35vw;
+}
+
+.home-Right {
+  background-color: white;
+  width: 65vw;
+}
+
+.home-Image-Div {
+  display: flex;
+  align-items: center;
+}
+.home-Image {
+  position: absolute;
+  margin-left: 20vw;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.home-Text {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5rem 0 15rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 4rem;
+}
+
+/*ABOUT*/
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-6);
+}
+
+.about-Flex {
+  display: flex;
+  height: 60vh;
+}
+
+.about-Left {
+  width: 60vw;
+  box-sizing: border-box;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-Right {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-Image {
+  width: auto;
+  height: auto;
+}
+
+.about-Bottom {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-Bottom-Text {
+  background-color: var(--color-1);
+  margin: 0 5rem;
+  padding: 0 2rem 2rem;
+}
+
+/*SKILLS*/
+
+.skills {
+  height: 100vh;
+  width: 100vw;
+}
+
+.skills-Top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  margin: 0 5rem;
+}
+
+.skills-Flex {
+  display: flex;
+  height: 80vh;
+}
+
+.skills-Left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+.skills-Right {
+  box-sizing: border-box;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills-CV {
+  height: 70%;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+/*PORTFOLIO*/
+
+.portfolio {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-2);
+  color: white;
+}
+
+.portfolio-Top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.portfolio-Content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.project {
+  height: 60vh;
+  width: 30vw;
+  background-color: var(--color-6);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+  padding: 2rem;
+}
+
+.project-Image {
+  width: 50%;
+  height: AUTO;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: inherit;
+  box-shadow: inherit;
+}
+
+/*CONTACT*/
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contact-Top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.contact-Area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 90vh;
+  padding: 0 10rem;
+}
+
+.contact-Background {
+  background-color: var(--color-5);
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.contact-Flexbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-Left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-RS {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.contact-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-Right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
