@@ -1,0 +1,25 @@
+.skills-container {
+  margin: 1.3rem;
+  box-sizing: border-box;
+  .skills-complete {
+    border-top: 0.1rem solid lightgray;
+    border-bottom: 0.1rem solid lightgray;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    .skills-flexbox {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        height: 5rem;
+      }
+      svg {
+        width: 2rem;
+      }
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}

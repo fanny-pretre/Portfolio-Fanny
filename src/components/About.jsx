@@ -3,7 +3,7 @@ import "./styles/About.scss";
 function About() {
   return (
     <div className="about-container">
-      <h2>A propos</h2>
+      <h2>1 - A propos</h2>
       <img
         src="https://picsum.photos/seed/picsum/200"
         className="about-image"

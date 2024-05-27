@@ -1,0 +1,26 @@
+.predilection-container {
+  margin: 1.3rem;
+  box-sizing: border-box;
+  ol {
+    display: flex;
+    font-size: 1rem;
+    padding: 0;
+    .predilection-li {
+      display: flex;
+      gap: 1rem;
+      .predilection-number {
+        font-size: 3rem;
+        margin-top: 0.7rem;
+        color: pink;
+      }
+      .predilection-text {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+      img {
+        height: 6rem;
+      }
+    }
+  }
+}

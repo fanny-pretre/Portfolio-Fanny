@@ -5,7 +5,7 @@ function Currently() {
     <div className="currently-section">
       <div className="currently-container">
         <div className="currently-title">
-          <h2> Actuellement </h2>
+          <h2> 2 - Actuellement </h2>
           <p>A la recherche d'une alternance pour septembre 2024</p>
         </div>
         <div className="currently">
