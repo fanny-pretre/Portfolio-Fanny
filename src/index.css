@@ -62,3 +62,10 @@ button {
   font-weight: 600;
   font-size: 1rem;
 }
+
+footer {
+  text-align: center;
+  font-family: var(--terciary-font);
+  font-size: 15px;
+  margin-bottom: 8rem;
+}

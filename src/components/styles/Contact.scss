@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --secondary-font: "Patrick Hand", cursive;
+  --terciary-font: "Atkinson Hyperlegible", sans-serif;
+  --color-1: black;
+  --color-2: white;
+  --color-3: #233a63;
+  --color-4: #005580;
+  --color-5: #a26702;
+}
+
+.contact-section {
+  margin: 1.6rem 1.3rem;
+  padding: 0 24px;
+  ul {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    li {
+      list-style: none;
+      svg {
+        background-color: var(--color-2);
+        border-radius: 50%;
+        &:hover {
+          background-color: var(--color-5);
+        }
+      }
+    }
+  }
+}

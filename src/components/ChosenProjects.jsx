@@ -1,5 +1,6 @@
 import "./styles/ChosenProjects.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Slider() {
   /*A completer avec les bonnes datas pour le slider*/
@@ -50,7 +51,9 @@ export default function Slider() {
             alt={projects[currentProject].alt}
             className="img-project"
           />
-          <button className="button-project">En savoir plus</button>
+          <button className="button-project">
+            En savoir plus sur {projects[currentProject].name}
+          </button>
         </div>
       </div>
       <div className="project-dots">
@@ -66,7 +69,9 @@ export default function Slider() {
         ))}
       </div>
       <div className="project-button-section">
-        <button>Accès à la page contenant tous les projets</button>
+        <Link to="/projects">
+          <button>Accès à la page contenant tous les projets</button>
+        </Link>
       </div>
     </div>
   );

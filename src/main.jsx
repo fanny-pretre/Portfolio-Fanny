@@ -6,7 +6,7 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
 import CSR from "./pages/CSR";
 
 function Main() {
@@ -27,8 +27,8 @@ function Main() {
           element: <CSR />,
         },
         {
-          path: "/contact",
-          element: <Contact />,
+          path: "/experience",
+          element: <Experience />,
         },
       ],
     },

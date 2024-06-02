@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/About.scss";
 
 function About() {
@@ -23,10 +24,12 @@ function About() {
           de dev n'hésitez pas à me contacter !
         </p>
         <div className="button-section">
-          <button className="button-about">
-            {" "}
-            EN SAVOIR PLUS SUR MON PARCOURS{" "}
-          </button>
+          <Link to="/experience">
+            <button className="button-about">
+              {" "}
+              EN SAVOIR PLUS SUR MON PARCOURS{" "}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

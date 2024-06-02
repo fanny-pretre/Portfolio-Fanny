@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import Predilection from "../components/Predilection";
 import Values from "../components/Values";
 import Slider from "../components/ChosenProjects";
+import Contact from "../components/Contact";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Predilection />
       <Slider />
       <Values />
+      <Contact />
     </div>
   );
 }

@@ -60,12 +60,15 @@
         background-color: transparent;
         border: solid 0.2rem white;
         cursor: pointer;
-        z-index: 3;
         position: absolute;
         bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
         color: var(--color-2);
+        &:hover {
+          border: solid 0.2rem var(--color-5);
+          color: var(--color-5);
+        }
       }
     }
   }
