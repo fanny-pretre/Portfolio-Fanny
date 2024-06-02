@@ -15,6 +15,7 @@ export default function Header() {
   return (
     <>
       <div className="slider-container">
+        <div className="slider-overlay"></div>
         <div className="slider-title">
           <h1> Fanny Prêtre</h1>
           <p> Bienvenue sur mon portfolio</p>

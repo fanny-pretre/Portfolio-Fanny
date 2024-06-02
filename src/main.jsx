@@ -6,6 +6,7 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 import Experience from "./pages/Experience";
 import CSR from "./pages/CSR";
 
@@ -21,6 +22,10 @@ function Main() {
         {
           path: "/projects",
           element: <Projects />,
+        },
+        {
+          path: "/project/:id",
+          element: <ProjectDetail />,
         },
         {
           path: "/csr",

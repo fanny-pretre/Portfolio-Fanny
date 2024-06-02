@@ -1,5 +1,14 @@
+import HeaderBis from "../components/HeaderBis";
+import ProjectList from "../components/ProjectList";
+
 function Projects() {
-  return <h1> Hello from Projects</h1>;
+  return (
+    <div>
+      <HeaderBis />
+      <h2> Mes projets</h2>
+      <ProjectList />
+    </div>
+  );
 }
 
 export default Projects;
