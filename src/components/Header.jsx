@@ -1,4 +1,5 @@
 import CV from "./assets/CV Fanny Prêtre 2024.pdf";
+import SWA1 from "./assets/SWA-1.webp";
 
 import "./styles/Slider.scss";
 
@@ -21,15 +22,15 @@ export default function Header() {
           <p> Bienvenue sur mon portfolio</p>
         </div>
         <div className="slider">
-          <img src="https://picsum.photos/200" alt="" className="img-slider" />
+          <img
+            src={SWA1}
+            alt="Photo représentant une femme blonde portant un t-shirt orange et un jean, un micro à la main en train de faire une présentation "
+            className="img-slider"
+          />
           <button onClick={onButtonClick} className="button-slider">
             {" "}
             Téléchargez mon CV{" "}
           </button>
-          <img
-            className="slider-logo"
-            src="https://media.istockphoto.com/id/1180155588/fr/vectoriel/mod%C3%A8le-de-conception-vectorielle-pour-les-entreprises-ic%C3%B4ne-abstraite-de-travail-d%C3%A9quipe.jpg?s=612x612&w=0&k=20&c=gIVv1IBFaZmSQjUPtXP8ShnyauHkGUkmHKWvkSAE2H0="
-          />
         </div>
       </div>
     </>

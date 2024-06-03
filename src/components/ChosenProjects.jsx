@@ -1,69 +1,47 @@
 import "./styles/ChosenProjects.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import projects from "./data/ProjectData";
 
 export default function Slider() {
-  /*A completer avec les bonnes datas pour le slider*/
-  const projects = [
-    {
-      id: 1,
-      name: "Virtu'ART",
-      src: "https://picsum.photos/200",
-      alt: "Parachute",
-    },
-    {
-      id: 2,
-      name: "Globe Guide",
-      src: "https://www.goodbro.fr/wp-content/uploads/Toyger-821x1024.jpg.webp",
-      alt: "soirée de ouf",
-    },
-    {
-      id: 3,
-      name: "SkyHook",
-      src: "https://static.nationalgeographic.fr/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=900",
-      alt: "Des jolies chèvres",
-    },
-    {
-      id: 4,
-      name: "WhacAMole",
-      src: "https://picsum.photos/200",
-      alt: "travaux manuel",
-    },
-  ];
-
-  const [currentProject, setCurrentProject] = useState(0);
+  const [currentProject, setCurrentProject] = useState(projects[0]);
 
   const handleDotClick = (index) => {
-    setCurrentProject(index);
+    const test = projects.find((p) => p.id === index);
+    setCurrentProject(test);
   };
+
+  useEffect(() => {
+    console.log(currentProject);
+  }, [currentProject]);
 
   return (
     <div className="project-section">
       <h2>Quelques projets</h2>
       <div className="project-container">
-        <div className="project" key={projects[currentProject].id}>
+        <div className="project">
           <div className="project-title">
-            <p className="project-name">{projects[currentProject].name}</p>
+            <p className="project-name">{currentProject.name}</p>
           </div>
           <div className="project-overlay"></div>
           <img
-            src={projects[currentProject].src}
-            alt={projects[currentProject].alt}
+            src={currentProject.image}
+            alt={currentProject.alt}
             className="img-project"
           />
-          <button className="button-project">
-            En savoir plus sur {projects[currentProject].name}
-          </button>
+          <Link className="button-project" to={`/project/${currentProject.id}`}>
+            En savoir plus sur {currentProject.name}
+          </Link>
         </div>
       </div>
       <div className="project-dots">
-        {projects.map((_, dotIndex) => (
+        {projects.map((project) => (
           <button
-            key={dotIndex}
-            className={`dot ${dotIndex === currentProject ? "active" : ""}`}
-            onClick={() => handleDotClick(dotIndex)}
-            tabIndex={0}
-            aria-label={`Project ${dotIndex + 1}`}
+            key={project.id}
+            className={`dot ${
+              project.id === currentProject.id ? "active" : ""
+            }`}
+            onClick={() => handleDotClick(project.id)}
             type="button"
           />
         ))}

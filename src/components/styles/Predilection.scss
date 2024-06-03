@@ -11,7 +11,7 @@
 }
 
 .predilection-container {
-  margin: 1.3rem;
+  margin: 1.3rem 1.3rem 50px;
   box-sizing: border-box;
   ol {
     display: flex;
@@ -34,7 +34,7 @@
         width: 100%;
         h3 {
           font-size: 1.2rem;
-          margin-bottom: 6px;
+          margin: 0;
         }
       }
       svg {

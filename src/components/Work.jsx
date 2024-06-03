@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import WCS from "./assets/WCS.webp";
+import Sellsy from "./assets/Sellsy.webp";
 
 import "./styles/Work.scss";
 
@@ -6,8 +8,8 @@ const items = [
   {
     place: "Wild Code School",
     date: "2024",
-    src: "https://www.la-spa.fr/app/app/uploads/2023/07/prendre-soin_duree-vie-chat.jpg",
-    alt: "",
+    src: WCS,
+    alt: "Image représentant une main qui tape sur un clavier d'ordinateur portable",
     title: "Formation développeur Full Stack JavaScript",
     text: `Titre professionnel "Développeur Web et Web Mobile" (équivalent Bac+2)`,
     category: "éducation",
@@ -15,7 +17,7 @@ const items = [
   {
     place: "Sellsy",
     date: "2021- 2023",
-    src: "https://www.goodbro.fr/wp-content/uploads/Toyger-821x1024.jpg.webp",
+    src: Sellsy,
     alt: "",
     title: "CSM et Formatrice",
     text: `Support et accompagnement des clients Sellsy dans la prise en main du logiciel. Sellsy est une plateforme saas qui permet aux TPE et PME de gérer leur facturation et leur prospection. `,

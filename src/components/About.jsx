@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 import "./styles/About.scss";
+import Profil from "./assets/Profil.webp";
 
 function About() {
   return (
     <div className="about-line">
       <div className="about-container">
         <h2> A propos</h2>
-        <img
-          src="https://picsum.photos/seed/picsum/200"
-          className="about-image"
-        />
+        <img src={Profil} className="about-image" />
         <h3>
           Vu mon nom, est-ce qu'on peut dire que je suis une pro des "display :
           nonne" ?
