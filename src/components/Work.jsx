@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import WCS from "./assets/WCS.webp";
 import Sellsy from "./assets/Sellsy.webp";
+import Wiztopic from "./assets/wizto.webp";
+import Noz from "./assets/noz.webp";
+import Noz2 from "./assets/noz2.webp";
+import SWA from "./assets/SWA-1.webp";
+import UBL from "./assets/UBL.webp";
+import UA1 from "./assets/UA.webp";
+import UA2 from "./assets/UA2.webp";
+import BU from "./assets/bu.webp";
 
 import "./styles/Work.scss";
 
@@ -9,7 +17,7 @@ const items = [
     place: "Wild Code School",
     date: "2024",
     src: WCS,
-    alt: "Image représentant une main qui tape sur un clavier d'ordinateur portable",
+    alt: "Image représentant 3 développeurs web",
     title: "Formation développeur Full Stack JavaScript",
     text: `Titre professionnel "Développeur Web et Web Mobile" (équivalent Bac+2)`,
     category: "éducation",
@@ -18,7 +26,7 @@ const items = [
     place: "Sellsy",
     date: "2021- 2023",
     src: Sellsy,
-    alt: "",
+    alt: "Photo représentant plusieurs personnes en train de travailler dans un open space",
     title: "CSM et Formatrice",
     text: `Support et accompagnement des clients Sellsy dans la prise en main du logiciel. Sellsy est une plateforme saas qui permet aux TPE et PME de gérer leur facturation et leur prospection. `,
     category: "expérience pro",
@@ -26,8 +34,8 @@ const items = [
   {
     place: "Wiztopic",
     date: "2021",
-    src: "https://static.nationalgeographic.fr/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=900",
-    alt: "",
+    src: Wiztopic,
+    alt: "Photo représentant 4 personnes devant une présentation",
     title: "Customer Sucess Manager",
     text: `Accompagnement et formation des directeurs des services communication d'entreprises du CAC 40 et du secteur de la banque et assurance dans leur utilisation de l'outil Wiztopic.`,
     category: "expérience pro",
@@ -35,8 +43,8 @@ const items = [
   {
     place: "iNEO (Univers Noz)",
     date: "2020 - 2021",
-    src: "https://static.nationalgeographic.fr/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=900",
-    alt: "",
+    src: Noz2,
+    alt: "Photo représentant deux opérateurs de production",
     title: "Gérante",
     text: `Coordinatrice de la stratégie d'entrepreneuriat en logistique et en charge de la relation avec les sociétés clientes. Accompagnement et animation d'environ 200 gérants.`,
     category: "expérience pro",
@@ -44,8 +52,8 @@ const items = [
   {
     place: "Univers Noz",
     date: "2020",
-    src: "https://static.nationalgeographic.fr/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=900",
-    alt: "",
+    src: Noz,
+    alt: "Photo représentant une vendeuse en magasin",
     title: "Responsable Innovation",
     text: `Accompagnement des collaborateurs de l'entreprise dans leur démarche d'innovation. Mise en place d'outils de management des idées et de l'innovation (physiques et digitaux).`,
     category: "expérience pro",
@@ -53,8 +61,8 @@ const items = [
   {
     place: "Traveler Sphere",
     date: "2019",
-    src: "https://static.nationalgeographic.fr/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=900",
-    alt: "",
+    src: SWA,
+    alt: "Photo représentant une femme blonde devant un Business Model Canva",
     title: "Entrepreneure",
     text: `Accompagnement des collaborateurs de l'entreprise dans leur démarche d'innovation. Mise en place d'outils de management des idées et de l'innovation (physiques et digitaux).`,
     category: "expérience pro",
@@ -62,24 +70,24 @@ const items = [
   {
     place: "Université Bretagne Loire",
     date: "2019",
-    src: "https://www.la-spa.fr/app/app/uploads/2023/07/prendre-soin_duree-vie-chat.jpg",
-    alt: "",
+    src: UBL,
+    alt: "Photo représentant des étudiants de dos",
     title: "Statut national étudiant entrepreneur",
     category: "éducation",
   },
   {
     place: "Université Angers",
     date: "2017 - 2019",
-    src: "https://www.la-spa.fr/app/app/uploads/2023/07/prendre-soin_duree-vie-chat.jpg",
-    alt: "",
+    src: UA1,
+    alt: "Photo représentant des étudiants et un professeur regardant un ordinateur",
     title: "Master négociateur trilingue en commerce international (NTCI)",
     category: "éducation",
   },
   {
     place: "Université Angers",
     date: "2014 - 2017",
-    src: "https://www.la-spa.fr/app/app/uploads/2023/07/prendre-soin_duree-vie-chat.jpg",
-    alt: "",
+    src: UA2,
+    alt: "Photo de l'Université d'Angers",
     title:
       "Licences Langues Etrangères Appliquées et Langues, Littératures et Civilisations étrangères Anglais",
     category: "éducation",
@@ -87,8 +95,8 @@ const items = [
   {
     place: "Bishop's University",
     date: "2016-2017",
-    src: "https://www.la-spa.fr/app/app/uploads/2023/07/prendre-soin_duree-vie-chat.jpg",
-    alt: "",
+    src: BU,
+    alt: "Photo de Bishop's University",
     title: "Etudiante d'échange pour la CREPUQ-BCI",
     category: "éducation",
   },
@@ -140,19 +148,27 @@ function Work() {
       <div className="button-section-work">
         <button
           onClick={() => handleCategoryChange("all")}
-          className="button-work"
+          className={
+            selectedCategory === "all" ? "button-active" : "button-work"
+          }
         >
           Tout
         </button>
         <button
           onClick={() => handleCategoryChange("expérience pro")}
-          className="button-work"
+          className={
+            selectedCategory === "expérience pro"
+              ? "button-active"
+              : "button-work"
+          }
         >
           Expérience
         </button>
         <button
           onClick={() => handleCategoryChange("éducation")}
-          className="button-work"
+          className={
+            selectedCategory === "éducation" ? "button-active" : "button-work"
+          }
         >
           Formation
         </button>

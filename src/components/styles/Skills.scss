@@ -25,6 +25,7 @@
         box-sizing: border-box;
         gap: 1rem;
         padding: 1rem 0;
+        cursor: pointer;
         .skills-visible {
           width: 100%;
           display: flex;
@@ -59,6 +60,18 @@
           font-size: 0.9rem;
         }
       }
+    }
+  }
+}
+
+// Responsive ordinateur & tablette
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+  .skills-container {
+    margin: 50px 1.3rem;
+    width: 50vw;
+    h2 {
+      margin-bottom: 16px;
     }
   }
 }

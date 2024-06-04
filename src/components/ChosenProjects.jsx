@@ -26,7 +26,7 @@ export default function Slider() {
           <div className="project-overlay"></div>
           <img
             src={currentProject.image}
-            alt={currentProject.alt}
+            alt={currentProject.imagealt}
             className="img-project"
           />
           <Link className="button-project" to={`/project/${currentProject.id}`}>

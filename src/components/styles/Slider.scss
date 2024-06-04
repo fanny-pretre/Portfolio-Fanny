@@ -103,3 +103,17 @@
     }
   }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+  .slider-container {
+    width: 40vw;
+    height: auto;
+    .slider-title {
+      font-size: 2rem;
+    }
+    .slider {
+      width: 40vw;
+      height: 100%;
+    }
+  }
+}
