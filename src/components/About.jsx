@@ -6,7 +6,11 @@ function About() {
   return (
     <div className="about-line">
       <div className="about-container">
-        <h2> A propos</h2>
+        <div className="about-title">
+          <div className="about-title-line"></div>
+          <h2> A propos</h2>
+          <div className="about-title-line"></div>
+        </div>
         <img
           src={Profil}
           alt="photo en noir et blanc en représentant une femme blonde à lunettes"

@@ -1,11 +1,11 @@
 // Responsive ordinateur & tablette
 
-@media screen and (min-width: 800px) and (max-width: 1600px) {
+@media screen and (min-width: 801px) and (max-width: 1600px) {
   .home-firstsection {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    margin: 3rem 5rem;
+    margin: 3rem 3rem;
     height: auto;
     .home-firstsection-right {
       display: flex;
@@ -21,6 +21,35 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    margin: 3rem;
+    margin: 3rem 3rem;
+  }
+  .home-fifthsection {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 3rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .home-firstsection {
+    margin: 3rem 8rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home-secondsection {
+    margin: 3rem 8rem;
+    gap: 10rem;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home-fifthsection {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 3rem 8rem;
   }
 }

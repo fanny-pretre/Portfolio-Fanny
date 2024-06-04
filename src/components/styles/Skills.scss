@@ -66,12 +66,19 @@
 
 // Responsive ordinateur & tablette
 
-@media screen and (min-width: 800px) and (max-width: 1600px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
   .skills-container {
-    margin: 50px 1.3rem;
+    margin: 0 1.3rem;
     width: 50vw;
     h2 {
       margin-bottom: 16px;
     }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .skills-container {
+    margin: 0 1.3rem;
+    width: 50%;
   }
 }

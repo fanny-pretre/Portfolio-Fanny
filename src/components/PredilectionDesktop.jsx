@@ -1,4 +1,4 @@
-import "./styles/Predilection.scss";
+import "./styles/PredilectionsDesktop.scss";
 
 const interests = [
   {
@@ -23,14 +23,13 @@ const interests = [
 
 function PredilectionDesktop() {
   return (
-    <div className="predilection-container">
-      <h2> Mes centres d'intérêt</h2>
+    <div className="predilection-container-desk">
       <div>
         <ol>
           {interests.map((interest, index) => (
-            <li className="predilection-li" key={interest.id}>
-              <p className="predilection-number"> {interest.id} </p>
-              <div className="predilection-text">
+            <li className="predilection-li-desk" key={interest.id}>
+              <p className="predilection-number-desk"> {interest.id} </p>
+              <div className="predilection-text-desk">
                 <h3>
                   {interest.name}{" "}
                   <svg

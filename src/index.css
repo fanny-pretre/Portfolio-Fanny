@@ -99,3 +99,23 @@ a {
   font-weight: 700;
   font-family: var(--terciary-font);
 }
+
+@media screen and (min-width: 800px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .line {
+      width: 40vw;
+      height: 2px;
+      background: var(--color-4);
+    }
+    h2 {
+      margin-bottom: 0;
+      width: 20vw;
+      font-size: 2rem;
+    }
+  }
+}

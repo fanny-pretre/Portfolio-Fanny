@@ -44,8 +44,14 @@
   gap: 1rem;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1600px) {
+@media screen and (min-width: 800px) {
+  h2 {
+    margin-top: 3rem;
+  }
   .csr-container {
     margin: 1.3rem 10rem;
+    .csr-optimisations {
+      margin: 4rem 10rem;
+    }
   }
 }

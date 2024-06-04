@@ -13,10 +13,9 @@ import "./styles/ProjectDetails.scss";
 
 function ProjectDetail() {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 801px) and (max-width: 1600px)",
+    query: "(min-width: 801px)",
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
 
   const { id } = useParams();
 

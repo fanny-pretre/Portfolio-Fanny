@@ -4,7 +4,6 @@ function Contact() {
   return (
     <div className="contact-section">
       <div className="contact-container">
-        <h2> Contactez-moi</h2>
         <p>
           {" "}
           A la différence des index d'array, le réseau commence à 1...

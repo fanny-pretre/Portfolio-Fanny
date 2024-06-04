@@ -29,3 +29,17 @@
     }
   }
 }
+
+// Responsive ordinateur & tablette
+
+@media screen and (min-width: 800px) {
+  .contact-section {
+    margin: 3rem 3rem;
+    text-align: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+}
