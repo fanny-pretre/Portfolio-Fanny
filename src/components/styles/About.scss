@@ -66,8 +66,9 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        margin-bottom: 2rem;
         h2 {
-          margin-bottom: 1rem;
+          margin: 0;
         }
         .about-title-line {
           width: 10vw;
@@ -94,11 +95,14 @@
           padding: 0.5rem;
           background-color: transparent;
           border: solid 0.2rem var(--color-4);
+          background-color: var(--color-2);
           font-family: var(--secondary-font);
+          color: var(--color-4);
           cursor: pointer;
-          color: black;
           &:hover {
-            border: solid 0.2rem var(--color-5);
+            border: solid 0.2rem var(--color-2);
+            background-color: var(--color-4);
+            color: var(--color-2);
           }
         }
       }
@@ -109,7 +113,6 @@
 @media screen and (min-width: 1201px) {
   .about-line {
     border-bottom: none;
-
     .about-container {
       display: flex;
       flex-direction: column;
@@ -119,16 +122,27 @@
       width: 100%;
       padding: 0 5rem;
       box-sizing: border-box;
-      h2 {
-        margin-bottom: 1rem;
+      .about-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        h2 {
+          margin: 0;
+        }
+        .about-title-line {
+          width: 10vw;
+          height: 2px;
+          background: var(--color-4);
+        }
       }
       h3 {
         margin-top: 0;
         margin-bottom: 1rem;
       }
       .about-image {
-        width: 100%;
-        height: 500px;
+        display: none;
       }
       p {
         margin-bottom: 15px;
@@ -141,11 +155,14 @@
           padding: 0.5rem;
           background-color: transparent;
           border: solid 0.2rem var(--color-4);
+          background-color: var(--color-2);
           font-family: var(--secondary-font);
+          color: var(--color-4);
           cursor: pointer;
-          color: black;
           &:hover {
-            border: solid 0.2rem var(--color-5);
+            border: solid 0.2rem var(--color-2);
+            background-color: var(--color-4);
+            color: var(--color-2);
           }
         }
       }

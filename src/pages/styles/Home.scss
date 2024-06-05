@@ -27,7 +27,10 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    justify-content: center;
     margin: 3rem 3rem;
+    gap: 5rem;
+    width: calc(100vw - 5rem);
   }
 }
 
@@ -38,6 +41,7 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    height: 75vh;
   }
   .home-secondsection {
     margin: 3rem 8rem;
@@ -51,5 +55,6 @@
     flex-direction: row;
     box-sizing: border-box;
     margin: 3rem 8rem;
+    gap: 10rem;
   }
 }

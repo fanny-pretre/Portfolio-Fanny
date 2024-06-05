@@ -11,6 +11,7 @@ function HeaderDesktop() {
           <Link to="/">
             <li>Accueil</li>
           </Link>
+          <div class="dot"></div>
           <Link to="/projects">
             <li>Projets</li>
           </Link>
@@ -19,6 +20,7 @@ function HeaderDesktop() {
           <Link to="/experience">
             <li>Expérience</li>
           </Link>
+          <div class="dot"></div>
           <Link to="/csr">
             <li> Démarche RNE</li>
           </Link>

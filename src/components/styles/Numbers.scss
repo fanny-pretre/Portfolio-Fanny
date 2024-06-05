@@ -1,7 +1,45 @@
+:root {
+  --secondary-font: "Patrick Hand", cursive;
+  --terciary-font: "Atkinson Hyperlegible", sans-serif;
+  --color-1: black;
+  --color-2: white;
+  --color-3: #233a63;
+  --color-4: #005580;
+  --color-5: #a26702;
+}
+
 .numbers-container {
-  height: 100%;
-  img {
-    width: 50vw;
-    height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 40vw;
+  .number-item {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    &:first-child {
+      border-bottom: 0.2rem solid var(--color-4);
+      border-right: 0.2rem solid var(--color-4);
+    }
+    &:last-child {
+      border-top: 0.2rem solid var(--color-4);
+      border-left: 0.2rem solid var(--color-4);
+    }
+    .number-number {
+      color: var(--color-4);
+      font-family: var(--secondary-font);
+      font-size: 5rem;
+      font-weight: 900;
+    }
+    p {
+      width: 80%;
+    }
   }
 }

@@ -36,25 +36,27 @@
 @media screen and (min-width: 801px) {
   .currently-section {
     height: auto;
-    padding: 0;
-    margin-bottom: 1.3rem;
-    margin-left: 1.3rem;
-    border: 6px solid var(--color-4);
     padding: 2rem;
+    border: 6px solid var(--color-4);
+    margin: 0 5rem;
 
     .currently-container {
+      position: relative;
       .currently-title {
         h2 {
           text-align: left;
           margin-bottom: 20px;
+          margin-top: 0;
         }
         p {
           width: 90%;
         }
-        .svg-currently {
-          svg {
-            display: none;
-          }
+        svg {
+          width: 4rem;
+          transform: rotate(30deg);
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
     }

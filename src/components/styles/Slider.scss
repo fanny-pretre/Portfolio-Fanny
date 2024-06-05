@@ -62,10 +62,6 @@
       left: 50%;
       transform: translateX(-50%);
       color: white;
-      &:hover {
-        border: solid 0.2rem var(--color-5);
-        color: var(--color-5);
-      }
     }
     .slider-logo {
       height: 7rem;
