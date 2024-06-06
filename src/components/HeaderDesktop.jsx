@@ -47,7 +47,7 @@ function HeaderDesktop() {
         </ul>
         <ul>
           <Link to="/experience">
-            <li className="hover">Expérience</li>
+            <li className="hover">Expériences</li>
           </Link>
           <div class="dot"></div>
           <Link to="/csr">
