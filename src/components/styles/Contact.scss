@@ -22,9 +22,6 @@
       svg {
         background-color: var(--color-2);
         border-radius: 50%;
-        &:hover {
-          background-color: var(--color-5);
-        }
       }
     }
   }
@@ -34,7 +31,7 @@
 
 @media screen and (min-width: 800px) {
   .contact-section {
-    margin: 8rem 3rem;
+    margin: 6rem 3rem;
     text-align: center;
     ul {
       display: flex;

@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 3rem 3rem;
     height: auto;
+    height: 85vh;
     .home-firstsection-right {
       display: flex;
       flex-direction: column;
@@ -14,7 +15,6 @@
       justify-content: space-evenly;
       box-sizing: border-box;
       width: 60vw;
-      padding-left: 2rem;
     }
   }
   .home-secondsection {
@@ -36,15 +36,21 @@
 
 @media screen and (min-width: 1601px) {
   .home-firstsection {
-    margin: 3rem 8rem;
+    margin: 3rem 12rem;
     height: auto;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
     height: 75vh;
+    .home-firstsection-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 2rem;
+    }
   }
   .home-secondsection {
-    margin: 3rem 8rem;
+    margin: 3rem 12rem;
     gap: 10rem;
     display: flex;
     flex-direction: row;
@@ -54,7 +60,7 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    margin: 3rem 8rem;
+    margin: 3rem 12rem;
     gap: 10rem;
   }
 }
