@@ -16,7 +16,7 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 6000;
 
   ul {
     display: grid;
@@ -37,9 +37,6 @@ nav {
       gap: 0.3rem;
       padding: 0.5rem 0;
       background-color: var(--color-2);
-      &:hover {
-        background-color: var(--color-5);
-      }
     }
   }
 }

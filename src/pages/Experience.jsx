@@ -15,14 +15,12 @@ function Experience() {
       {isTabletOrMobile && (
         <div>
           <HeaderBis />
-          <h2> Mon parcours</h2>
           <Work />
         </div>
       )}
       {isDesktopOrLaptop && (
         <div>
           <HeaderDesktop />
-          <h2> Mon parcours</h2>
           <Work />
         </div>
       )}

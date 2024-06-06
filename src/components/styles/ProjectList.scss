@@ -11,6 +11,9 @@
 }
 
 .projectlist-section {
+  svg {
+    display: none;
+  }
   .project-container {
     width: 100vw;
     display: grid;
@@ -47,12 +50,23 @@
 
 @media screen and (min-width: 800px) and (max-width: 1600px) {
   .projectlist-section {
-    width: 80vw;
     box-sizing: border-box;
-    margin: 0 10rem;
+    margin: 10rem 10rem 3rem;
+    text-align: center;
+    .svg-section {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      svg {
+        display: block;
+      }
+    }
+    .title-flex {
+      margin: 2rem;
+    }
     .project-container {
       width: 100%;
-      grid-template-columns: repeat(3, 26vw);
+      grid-template-columns: repeat(3, 32%);
     }
   }
 
@@ -82,12 +96,22 @@
 
 @media screen and (min-width: 1600px) {
   .projectlist-section {
-    width: 80vw;
     box-sizing: border-box;
-    margin: 0 12rem;
+    margin: 12rem 12rem;
+    .svg-section {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      svg {
+        display: block;
+      }
+    }
+    .title-flex {
+      margin: 2rem;
+    }
     .project-container {
       width: 100%;
-      grid-template-columns: repeat(4, 18vw);
+      grid-template-columns: repeat(4, 24%);
     }
   }
 

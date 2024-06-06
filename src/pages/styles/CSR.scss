@@ -12,6 +12,9 @@
 
 .csr-container {
   margin: 1.3rem 1.3rem 1.6rem;
+  svg {
+    display: none;
+  }
   p {
     margin-bottom: 1rem;
   }
@@ -45,11 +48,19 @@
 }
 
 @media screen and (min-width: 800px) {
-  h2 {
-    margin-top: 3rem;
-  }
-  .csr-container {
-    margin: 1.3rem 10rem;
+  .csr-section {
+    margin: 10rem 10rem;
+    .svg-section {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      svg {
+        display: block;
+      }
+    }
+    .title-flex {
+      margin: 2rem;
+    }
     .csr-optimisations {
       margin: 4rem 10rem;
     }

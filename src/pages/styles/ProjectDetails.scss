@@ -63,17 +63,23 @@
   .projectdetails-container {
     display: flex;
     flex-direction: row;
-    margin: 1.3rem 5rem;
+    margin: 9rem 10rem 0;
     gap: 3rem;
+    box-sizing: border-box;
+    height: 67vh;
+    footer {
+      margin: 1rem 0;
+    }
     img {
-      width: 40vw;
-      height: 40vw;
+      width: auto;
+      height: 100%;
     }
     .projectdetails-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      align-items: center;
     }
     p {
       text-align: left;
@@ -94,13 +100,74 @@
         box-sizing: border-box;
         width: auto;
         height: 3rem;
-        background-color: var(--color-4);
-        border: none;
+        background-color: var(--color-2);
+        color: var(--color-4);
+        border: 0.2rem solid var(--color-4);
         cursor: pointer;
-        color: var(--color-2);
         margin-bottom: 2rem;
+        text-transform: uppercase;
         &:hover {
-          background-color: var(--color-5);
+          background-color: var(--color-4);
+          color: var(--color-2);
+          border: 0.2rem solid var(--color-4);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .projectdetails-container {
+    display: flex;
+    flex-direction: row;
+    margin: 12rem 10rem 0;
+    gap: 3rem;
+    box-sizing: border-box;
+    height: 70vh;
+    footer {
+      margin: 2rem 0;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+    .projectdetails-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    p {
+      text-align: left;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      li {
+        list-style: none;
+      }
+    }
+    .projectdetail-button-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .projectdetail-button {
+        box-sizing: border-box;
+        width: auto;
+        height: 3rem;
+        background-color: var(--color-2);
+        color: var(--color-4);
+        border: 0.2rem solid var(--color-4);
+        cursor: pointer;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        &:hover {
+          background-color: var(--color-4);
+          color: var(--color-2);
+          border: 0.2rem solid var(--color-4);
         }
       }
     }

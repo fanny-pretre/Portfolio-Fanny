@@ -1,6 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-
+import { useEffect } from "react";
 import HeaderBis from "../components/HeaderBis";
 import ProjectList from "../components/ProjectList";
 import HeaderDesktop from "../components/HeaderDesktop";
@@ -16,14 +16,12 @@ function Projects() {
       {isTabletOrMobile && (
         <div>
           <HeaderBis />
-          <h2> Mes projets</h2>
           <ProjectList />
         </div>
       )}
       {isDesktopOrLaptop && (
         <div>
           <HeaderDesktop />
-          <h2> Mes projets</h2>
           <ProjectList />
         </div>
       )}

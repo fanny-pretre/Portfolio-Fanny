@@ -1,5 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { useEffect } from "react";
 
 import Header from "../components/Header";
 import HeaderDesktop from "../components/HeaderDesktop";
@@ -21,6 +22,13 @@ function Home() {
     query: "(min-width: 801px)",
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -75,6 +83,9 @@ function Home() {
             <Numbers />
             <Values />
           </div>
+          <button className="scroll-to-top" onClick={scrollToTop}>
+            &#8679;
+          </button>
         </div>
       )}
     </>

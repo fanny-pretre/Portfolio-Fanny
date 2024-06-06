@@ -142,36 +142,63 @@ function Work() {
 
   const numberOfDots = Math.ceil(filteredItems.length / 4); // Nombre de groupes de 4 éléments
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="experience-container">
-      <p>Filtrer par </p>
-      <div className="button-section-work">
-        <button
-          onClick={() => handleCategoryChange("all")}
-          className={
-            selectedCategory === "all" ? "button-active" : "button-work"
-          }
+      <div className="svg-section">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          viewBox="0 0 24 24"
         >
-          Tout
-        </button>
-        <button
-          onClick={() => handleCategoryChange("expérience pro")}
-          className={
-            selectedCategory === "expérience pro"
-              ? "button-active"
-              : "button-work"
-          }
-        >
-          Expérience
-        </button>
-        <button
-          onClick={() => handleCategoryChange("éducation")}
-          className={
-            selectedCategory === "éducation" ? "button-active" : "button-work"
-          }
-        >
-          Formation
-        </button>
+          <path
+            d="M0 7v15h24v-15h-24zm22 13h-20v-11h15v5l1.5-1.5 1.5 1.5v-5h2v11zm-13-14h-2v-2c0-1.104.896-2 2-2h6c1.104 0 2 .896 2 2v2h-2v-1.5c0-.276-.224-.5-.5-.5h-5c-.276 0-.5.224-.5.5v1.5z"
+            fill="#005580"
+          />
+        </svg>
+      </div>
+      <div className="title-flex">
+        <div className="line"></div>
+        <h2> Mon parcours </h2>
+        <div className="line"></div>
+      </div>
+      <div className="filter-work">
+        <p>Filtrer par </p>
+        <div className="button-section-work">
+          <button
+            onClick={() => handleCategoryChange("all")}
+            className={
+              selectedCategory === "all" ? "button-active" : "button-work"
+            }
+          >
+            Tout
+          </button>
+          <button
+            onClick={() => handleCategoryChange("expérience pro")}
+            className={
+              selectedCategory === "expérience pro"
+                ? "button-active"
+                : "button-work"
+            }
+          >
+            Expérience
+          </button>
+          <button
+            onClick={() => handleCategoryChange("éducation")}
+            className={
+              selectedCategory === "éducation" ? "button-active" : "button-work"
+            }
+          >
+            Formation
+          </button>
+        </div>
       </div>
       <div className="gallery-container">
         <div className="gallery-images-primary">
@@ -232,6 +259,9 @@ function Work() {
           </div>
         )}
       </div>
+      <button className="scroll-to-top" onClick={scrollToTop}>
+        &#8679;
+      </button>
     </div>
   );
 }

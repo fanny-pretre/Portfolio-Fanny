@@ -19,10 +19,6 @@
     justify-content: space-around;
     li {
       list-style: none;
-      svg {
-        background-color: var(--color-2);
-        border-radius: 50%;
-      }
     }
   }
 }
@@ -37,6 +33,13 @@
       display: flex;
       justify-content: center;
       gap: 3rem;
+      svg {
+        background-color: var(--color-2);
+
+        &:hover path {
+          fill: var(--color-3);
+        }
+      }
     }
   }
 }

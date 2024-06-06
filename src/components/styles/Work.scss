@@ -13,6 +13,10 @@
 .experience-container {
   margin: 1.3rem;
   box-sizing: border-box;
+  svg {
+    display: none;
+  }
+
   .button-section-work {
     display: flex;
     gap: 1rem;
@@ -24,9 +28,6 @@
       border-radius: 0.2rem;
       color: var(--color-2);
       cursor: pointer;
-      &:hover {
-        background-color: var(--color-5);
-      }
     }
   }
   .gallery-images-primary {
@@ -95,12 +96,12 @@
     padding: 0.5rem;
     background-color: transparent;
     border: none;
-    border-bottom: solid 0.2rem var(--color-4);
+    border-bottom: solid 0.2rem var(--color-2);
     font-family: var(--secondary-font);
     cursor: pointer;
     color: black;
     &:hover {
-      border-bottom: solid 0.2rem var(--color-5);
+      border-bottom: solid 0.2rem var(--color-4);
     }
   }
   .experience-dots {
@@ -137,27 +138,73 @@
   cursor: pointer;
 }
 
+.scroll-to-top {
+  display: none;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1200px) {
   .experience-container {
-    margin: 1.3rem;
+    margin: 8rem 10rem 0;
     padding: 0 4rem;
-  }
-  .date-work {
-    h2 {
-      font-size: 5rem;
+    .svg-section {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      svg {
+        display: block;
+      }
+    }
+    .title-flex {
+      margin: 2rem;
+    }
+    .date-work {
+      h2 {
+        font-size: 5rem;
+      }
+    }
+    .experience-buttons {
+      button {
+        font-size: 1.4rem;
+      }
     }
   }
 }
 
 @media screen and (min-width: 1201px) {
   .experience-container {
-    margin: 1.3rem 10rem;
+    margin: 10rem 5rem 0;
     padding: 0 12rem;
+    .svg-section {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      svg {
+        display: block;
+      }
+    }
+    .title-flex {
+      margin: 2rem;
+      .line {
+        width: 30vw;
+      }
+    }
+    .filter-work {
+      margin-left: 5rem;
+      margin-bottom: 2rem;
+    }
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0rem 5rem;
+    }
     .gallery-images-primary {
-      height: auto;
+      height: 60vh;
+      width: 60vh;
     }
     .gallery-flex {
-      height: auto;
+      height: 18vh;
+      width: 60vh;
     }
   }
   .date-work {
@@ -165,5 +212,14 @@
     h2 {
       font-size: 5rem;
     }
+  }
+  .experience-buttons {
+    gap: 3rem;
+    button {
+      font-size: 1.4rem;
+    }
+  }
+  .scroll-to-top {
+    display: block;
   }
 }

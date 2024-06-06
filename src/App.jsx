@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="root">
       <main>
+        <ScrollToTop />
         <Outlet />
         <Footer />
         {isTabletOrMobile && <Navbar />}

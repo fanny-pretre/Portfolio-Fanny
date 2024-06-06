@@ -11,7 +11,12 @@
 }
 
 .headerdesktop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
+  background: white;
   height: 16vh;
   display: flex;
   flex-direction: column;
@@ -50,6 +55,17 @@
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.2rem;
+        position: relative;
+      }
+
+      .hover {
+        width: auto;
+        height: 15px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #6faecd; /* Changez la couleur de fond au survol */
+        }
       }
     }
   }
@@ -65,4 +81,17 @@ a {
   height: 8px; /* Taille du point */
   background-color: var(--color-4); /* Couleur du point */
   border-radius: 50%; /* Rendre le point circulaire */
+}
+
+.not-sticky {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white; /* Ajoutez un fond pour que le contenu sous-jacent ne soit pas visible */
 }

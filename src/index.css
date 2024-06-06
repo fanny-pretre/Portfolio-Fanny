@@ -100,6 +100,10 @@ a {
   font-family: var(--terciary-font);
 }
 
+footer {
+  margin-bottom: 8rem;
+}
+
 @media screen and (min-width: 800px) {
   .title-flex {
     display: flex;
@@ -119,7 +123,7 @@ a {
     }
   }
   footer {
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 3rem;
   }
 }

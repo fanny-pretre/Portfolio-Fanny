@@ -10,6 +10,7 @@ import SkyHook from "../assets/SkyHook.webp";
 import WhacAMole from "../assets/WhacAMole.webp";
 import HideAway from "../assets/Hide Away.webp";
 import Wait from "../assets/Wait.webp";
+import Geocode from "../assets/Geocode.webp";
 
 const projects = [
   {
@@ -84,10 +85,10 @@ const projects = [
     name: "Geocode",
     image: Voiture,
     imagealt: "Image représentant une voiture électrique",
-    imagedetail: Wait,
+    imagedetail: Geocode,
     imagedetailalt: "Page windows bleue qui annonce 'please wait'",
     labels: "Sass, React JS, SQL, API",
-    desc: "En cours de développement - Avec Geocode, transformez vos trajets en une expérience fluide et efficace. Notre plateforme vous aide à planifier et optimiser vos déplacements en vous proposant des bornes de recharge pour véhicules électriques avec des données mises à jour en temps réel. Que vous soyez en déplacement sur le pouce avec votre téléphone ou en train de planifier un long voyage sur votre ordinateur, Geocode est là pour vous. Geocode s'engage à démocratiser l’usage de la voiture électrique, en adoptant une logique de partage et de durabilité. Notre application est entièrement gratuite, avec l'ambition de proposer, à terme, une gamme plus large de services, tels que des trajets alternatifs en vélo ou des options de covoiturage. Rejoignez-nous dans notre mission pour un avenir plus vert et plus connecté. Planifiez, optimisez et partez en toute tranquillité avec Geocode !",
+    desc: "En cours de développement - Avec Geocode, transformez vos trajets en une expérience fluide et efficace. Notre plateforme vous aide à planifier et optimiser vos déplacements en vous proposant des bornes de recharge pour véhicules électriques avec des données mises à jour en temps réel. Geocode s'engage à démocratiser l’usage de la voiture électrique, en adoptant une logique de partage et de durabilité. Rejoignez-nous dans notre mission pour un avenir plus vert et plus connecté. Planifiez, optimisez et partez en toute tranquillité avec Geocode !",
     github:
       "https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-P3-GeoCode",
   },
