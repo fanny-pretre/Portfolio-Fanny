@@ -24,8 +24,9 @@ function Currently() {
             <h2> Actuellement </h2>
             <p>
               {" "}
-              Je suis à la recherche d'une alternance en JavaScript ou Java pour
-              septembre 2024 sur Niort, La Rochelle ou en full remote.{" "}
+              Je suis à la recherche d'une alternance ou d'un poste de
+              développeuse junior en JavaScript ou Java pour septembre 2024 sur
+              Niort, La Rochelle ou en full remote.{" "}
             </p>
           </div>
         </div>

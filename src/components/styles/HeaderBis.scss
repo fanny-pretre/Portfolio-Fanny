@@ -23,7 +23,7 @@
     img {
       height: 15vh;
       position: absolute;
-      border: solid 0.1rem black;
+      object-fit: cover;
     }
   }
 }

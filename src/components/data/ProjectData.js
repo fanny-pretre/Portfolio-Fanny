@@ -86,8 +86,8 @@ const projects = [
     image: Voiture,
     imagealt: "Image représentant une voiture électrique",
     imagedetail: Geocode,
-    imagedetailalt: "Page windows bleue qui annonce 'please wait'",
-    labels: "Sass, React JS, SQL, API",
+    imagedetailalt: "Image représentant une voiture electrique en format icône",
+    labels: "Sass, React JS, MySQL, Harmonia ",
     desc: "En cours de développement - Avec Geocode, transformez vos trajets en une expérience fluide et efficace. Notre plateforme vous aide à planifier et optimiser vos déplacements en vous proposant des bornes de recharge pour véhicules électriques avec des données mises à jour en temps réel. Geocode s'engage à démocratiser l’usage de la voiture électrique, en adoptant une logique de partage et de durabilité. Rejoignez-nous dans notre mission pour un avenir plus vert et plus connecté. Planifiez, optimisez et partez en toute tranquillité avec Geocode !",
     github:
       "https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-P3-GeoCode",

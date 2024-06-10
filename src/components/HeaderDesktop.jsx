@@ -2,6 +2,8 @@ import "./styles/HeaderDesktop.scss";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import Logo from "./assets/logo.webp";
+
 function HeaderDesktop() {
   const [isSticky, setIsSticky] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(1);
@@ -31,7 +33,7 @@ function HeaderDesktop() {
         isSticky ? "sticky" : "not-sticky"
       }`}
     >
-      <img src="https://media.istockphoto.com/id/1180155588/fr/vectoriel/mod%C3%A8le-de-conception-vectorielle-pour-les-entreprises-ic%C3%B4ne-abstraite-de-travail-d%C3%A9quipe.jpg?s=612x612&w=0&k=20&c=gIVv1IBFaZmSQjUPtXP8ShnyauHkGUkmHKWvkSAE2H0=" />
+      <img src={Logo} />
       <div className="headerdesktop-grey"></div>
       <div className="headerdesktop-white">
         <ul>

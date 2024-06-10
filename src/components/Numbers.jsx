@@ -1,7 +1,5 @@
 import "./styles/Numbers.scss";
 
-import chiffres from "./assets/6.png";
-
 function Numbers() {
   return (
     <div className="numbers-container">

@@ -151,19 +151,6 @@ function Work() {
 
   return (
     <div className="experience-container">
-      <div className="svg-section">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="100"
-          height="100"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M0 7v15h24v-15h-24zm22 13h-20v-11h15v5l1.5-1.5 1.5 1.5v-5h2v11zm-13-14h-2v-2c0-1.104.896-2 2-2h6c1.104 0 2 .896 2 2v2h-2v-1.5c0-.276-.224-.5-.5-.5h-5c-.276 0-.5.224-.5.5v1.5z"
-            fill="#005580"
-          />
-        </svg>
-      </div>
       <div className="title-flex">
         <div className="line"></div>
         <h2> Mon parcours </h2>
@@ -228,7 +215,7 @@ function Work() {
           ))}
         </div>
         <div className="experience-buttons">
-          <button onClick={prevImage}>Previous</button>
+          <button onClick={prevImage}>Précédent</button>
           <div className="experience-dots">
             {Array.from({ length: numberOfDots }).map((_, index) => (
               <button
@@ -242,7 +229,7 @@ function Work() {
               />
             ))}
           </div>
-          <button onClick={nextImage}>Next</button>
+          <button onClick={nextImage}>Suivant</button>
         </div>
         {limitedItems.length > 0 && (
           <div className="work-bottom-text">
