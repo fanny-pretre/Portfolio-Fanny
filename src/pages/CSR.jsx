@@ -126,7 +126,9 @@ function CSR() {
                     </li>
                     <li>
                       <p>
-                        Optimisation du code pour améliorer les performances.{" "}
+                        Optimisation du code pour améliorer les performances
+                        (notamment redimensionner encore davantage certaines
+                        images).{" "}
                       </p>
                     </li>
                   </ul>
@@ -396,7 +398,9 @@ function CSR() {
                     </li>
                     <li>
                       <p>
-                        Optimisation du code pour améliorer les performances.{" "}
+                        Optimisation du code pour améliorer les performances
+                        (notamment redimensionner encore davantage certaines
+                        images).{" "}
                       </p>
                     </li>
                   </ul>
