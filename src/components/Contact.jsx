@@ -11,7 +11,11 @@ function Contact() {
         </p>
         <ul>
           <li>
-            <a href="mailto:fanny.pretre@gmail.com" target="_blank">
+            <a
+              href="mailto:fanny.pretre@gmail.com"
+              aria-label="Send an email to fanny.pretre@gmail.com"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"
@@ -29,6 +33,7 @@ function Contact() {
             <a
               href="https://www.linkedin.com/in/fanny-pr%C3%AAtre/"
               target="_blank"
+              aria-label="Open Fanny Prêtre LinkedIn Profile"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +49,11 @@ function Contact() {
             </a>
           </li>
           <li>
-            <a href="https://github.com/fanny-pretre" target="_blank">
+            <a
+              href="https://github.com/fanny-pretre"
+              aria-label="Open Fanny Prêtre GitHub Profile"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"

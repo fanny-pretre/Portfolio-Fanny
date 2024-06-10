@@ -37,6 +37,8 @@ export default function Slider() {
       <div className="project-dots">
         {projects.map((project) => (
           <button
+            id="al"
+            aria-label="dot-carousel"
             key={project.id}
             className={`dot ${
               project.id === currentProject.id ? "active" : ""
