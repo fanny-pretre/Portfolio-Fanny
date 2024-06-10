@@ -75,11 +75,6 @@
           transform: translateX(-50%);
           color: var(--color-2);
           z-index: 2000;
-
-          &:hover {
-            border: solid 0.2rem var(--color-5);
-            color: var(--color-5);
-          }
         }
       }
     }
@@ -127,9 +122,6 @@
       font-family: var(--secondary-font);
       color: black;
       cursor: pointer;
-      &:hover {
-        border-bottom: solid 0.2rem var(--color-5);
-      }
     }
   }
 }
@@ -210,6 +202,7 @@
   .project-dots {
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     z-index: 2;
     display: flex;
     justify-content: center;
