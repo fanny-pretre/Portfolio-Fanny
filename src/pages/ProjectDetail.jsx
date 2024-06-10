@@ -55,6 +55,10 @@ function ProjectDetail() {
                     />
                   </svg>
                 </a>
+                <a href={project.github} target="_blank">
+                  {" "}
+                  Le GitHub{" "}
+                </a>
               </li>
               <li>
                 <a href={project.prod} target="_blank">
@@ -71,6 +75,10 @@ function ProjectDetail() {
                       fill={project.prod ? "#005580" : "grey"}
                     />
                   </svg>
+                </a>
+                <a href={project.prod} target="_blank">
+                  {" "}
+                  Le site{" "}
                 </a>
               </li>
             </ul>
@@ -108,6 +116,10 @@ function ProjectDetail() {
                       />
                     </svg>
                   </a>
+                  <a href={project.github} target="_blank">
+                    {" "}
+                    Le GitHub{" "}
+                  </a>
                 </li>
                 <li>
                   <a href={project.prod} target="_blank">
@@ -124,6 +136,10 @@ function ProjectDetail() {
                         fill={project.prod ? "#005580" : "grey"}
                       />
                     </svg>
+                  </a>
+                  <a href={project.prod} target="_blank">
+                    {" "}
+                    Le site{" "}
                   </a>
                 </li>
               </ul>
