@@ -87,23 +87,12 @@
     height: 100%;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem;
     .previous-next {
-      width: 6rem;
-      height: auto;
-      padding: 0.5rem;
-      background-color: transparent;
-      border: none;
-      border-bottom: solid 0.2rem var(--color-2);
-      font-family: var(--secondary-font);
-      cursor: pointer;
-      color: black;
-      &:hover {
-        border-bottom: solid 0.2rem var(--color-4);
-      }
+      display: none;
     }
 
     .dot {
