@@ -2,8 +2,8 @@ import "./styles/Currently.scss";
 
 function Currently() {
   return (
-    <div className="currently-line">
-      <div className="currently-section">
+    <section className="currently-line">
+      <section className="currently-section">
         <div className="currently-container">
           <div className="currently-title">
             <div className="svg-currently">
@@ -30,8 +30,8 @@ function Currently() {
             </p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 

@@ -2,7 +2,7 @@ import "./styles/Numbers.scss";
 
 function Numbers() {
   return (
-    <div className="numbers-container">
+    <section className="numbers-container">
       <div className="number-item">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ function Numbers() {
         <p className="number-number">95</p>
         <p>note d'accessibilité de la page d'accueil sur Lighthouse</p>
       </div>
-    </div>
+    </section>
   );
 }
 

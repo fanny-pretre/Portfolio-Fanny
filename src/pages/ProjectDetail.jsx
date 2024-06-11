@@ -34,7 +34,7 @@ function ProjectDetail() {
       {isTabletOrMobile && (
         <div>
           <HeaderBis />
-          <div className="projectdetails-container">
+          <section className="projectdetails-container">
             <img src={project.imagedetail} alt={project.imagedetailalt} />
             <h2>{project.name}</h2>
             <h3> {project.labels} </h3>
@@ -88,13 +88,13 @@ function ProjectDetail() {
                 Revenir à la page projet
               </button>
             </div>
-          </div>
+          </section>
         </div>
       )}
       {isDesktopOrLaptop && (
         <div>
           <HeaderDesktop />
-          <div className="projectdetails-container">
+          <section className="projectdetails-container">
             <img src={project.imagedetail} alt={project.imagedetailalt} />
             <div className="projectdetails-text">
               <h2>{project.name}</h2>
@@ -153,7 +153,7 @@ function ProjectDetail() {
                 </button>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       )}
     </>

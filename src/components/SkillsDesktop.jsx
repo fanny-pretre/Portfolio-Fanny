@@ -30,7 +30,7 @@ const skills = [
 
 function SkillsDesktop() {
   return (
-    <div className="skills-container">
+    <section className="skills-container">
       <h2> Compétences </h2>
 
       <div className="skills-complete">
@@ -68,7 +68,7 @@ function SkillsDesktop() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

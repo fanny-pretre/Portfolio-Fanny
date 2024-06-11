@@ -23,7 +23,7 @@ const interests = [
 
 function Predilection() {
   return (
-    <div className="predilection-container">
+    <section className="predilection-container">
       <h2> Mes centres d'intérêt</h2>
       <div>
         <ol>
@@ -52,7 +52,7 @@ function Predilection() {
           ))}
         </ol>
       </div>
-    </div>
+    </section>
   );
 }
 

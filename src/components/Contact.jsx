@@ -2,7 +2,7 @@ import "./styles/Contact.scss";
 
 function Contact() {
   return (
-    <div className="contact-section">
+    <section className="contact-section">
       <div className="contact-container">
         <p>
           {" "}
@@ -69,7 +69,7 @@ function Contact() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

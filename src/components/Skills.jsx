@@ -40,7 +40,7 @@ function Skills() {
   };
 
   return (
-    <div className="skills-container">
+    <section className="skills-container">
       <h2> Compétences </h2>
 
       <div className="skills-complete">
@@ -97,7 +97,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

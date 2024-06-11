@@ -4,7 +4,7 @@ import Profil from "./assets/Profil.webp";
 
 function About() {
   return (
-    <div className="about-line">
+    <section className="about-line">
       <div className="about-container">
         <div className="about-title">
           <div className="about-title-line"></div>
@@ -42,7 +42,7 @@ function About() {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -3,8 +3,8 @@ import "./styles/Values.scss";
 
 function Values() {
   return (
-    <div className="values-line">
-      <div className="values-section">
+    <section className="values-line">
+      <section className="values-section">
         <div className="values-container">
           <div className="values-title">
             <div className="svg-values">
@@ -39,8 +39,8 @@ function Values() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 

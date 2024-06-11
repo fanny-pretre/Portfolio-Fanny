@@ -10,7 +10,7 @@ function ProjectList() {
     });
   };
   return (
-    <div className="projectlist-section">
+    <section className="projectlist-section">
       <div className="title-flex">
         <div className="line"></div>
         <h2> Mes projets </h2>
@@ -28,7 +28,7 @@ function ProjectList() {
       <button className="scroll-to-top" onClick={scrollToTop}>
         &#8679;
       </button>
-    </div>
+    </section>
   );
 }
 

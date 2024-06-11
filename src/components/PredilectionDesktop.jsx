@@ -23,7 +23,7 @@ const interests = [
 
 function PredilectionDesktop() {
   return (
-    <div className="predilection-container-desk">
+    <section className="predilection-container-desk">
       <div>
         <ol>
           {interests.map((interest, index) => (
@@ -53,7 +53,7 @@ function PredilectionDesktop() {
           ))}
         </ol>
       </div>
-    </div>
+    </section>
   );
 }
 

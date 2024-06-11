@@ -21,9 +21,9 @@ function CSR() {
   return (
     <>
       {isTabletOrMobile && (
-        <div>
+        <section>
           <HeaderBis />
-          <div className="csr-section">
+          <section className="csr-section">
             <h2> Ma démarche</h2>
             <div className="csr-container">
               <p>
@@ -285,13 +285,13 @@ function CSR() {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+        </section>
       )}
       {isDesktopOrLaptop && (
-        <div>
+        <section>
           <HeaderDesktop />
-          <div className="csr-section">
+          <section className="csr-section">
             <div className="title-flex">
               <div className="line"></div>
               <h2> Ma démarche </h2>
@@ -557,11 +557,11 @@ function CSR() {
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
           <button className="scroll-to-top" onClick={scrollToTop}>
             &#8679;
           </button>
-        </div>
+        </section>
       )}
     </>
   );

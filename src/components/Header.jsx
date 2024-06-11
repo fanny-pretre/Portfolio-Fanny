@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="slider-container">
+      <section className="slider-container">
         <div className="slider-overlay"></div>
         <div className="slider-title">
           <h1> Fanny Prêtre</h1>
@@ -32,7 +32,7 @@ export default function Header() {
             Téléchargez mon CV{" "}
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -13,16 +13,16 @@ function Experience() {
   return (
     <>
       {isTabletOrMobile && (
-        <div>
+        <section>
           <HeaderBis />
           <Work />
-        </div>
+        </section>
       )}
       {isDesktopOrLaptop && (
-        <div>
+        <section>
           <HeaderDesktop />
           <Work />
-        </div>
+        </section>
       )}
     </>
   );

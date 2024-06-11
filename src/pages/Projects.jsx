@@ -14,16 +14,16 @@ function Projects() {
   return (
     <>
       {isTabletOrMobile && (
-        <div>
+        <section>
           <HeaderBis />
           <ProjectList />
-        </div>
+        </section>
       )}
       {isDesktopOrLaptop && (
-        <div>
+        <section>
           <HeaderDesktop />
           <ProjectList />
-        </div>
+        </section>
       )}
     </>
   );

@@ -238,11 +238,7 @@ function Work() {
               {limitedItems[currentItem % 4]?.place} -{" "}
               {limitedItems[currentItem % 4]?.date}
             </h4>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: limitedItems[currentItem % 4]?.text,
-              }}
-            ></p>
+            <p>{limitedItems[currentItem % 4]?.text}</p>
           </div>
         )}
       </div>
