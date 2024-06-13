@@ -33,7 +33,10 @@ function HeaderDesktop() {
         isSticky ? "sticky" : "not-sticky"
       }`}
     >
-      <img src={Logo} />
+      <img
+        src={Logo}
+        alt="Logo du site de Fanny Prêtre composé de pictogrammes"
+      />
       <div className="headerdesktop-grey"></div>
       <div className="headerdesktop-white">
         <ul>

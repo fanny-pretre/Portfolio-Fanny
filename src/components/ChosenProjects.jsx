@@ -34,7 +34,7 @@ export default function Slider() {
       <div className="project-container">
         <div className="project">
           <div className="project-title">
-            <p className="project-name">{currentProject.name}</p>
+            <h3 className="project-name">{currentProject.name}</h3>
           </div>
           <div className="project-overlay"></div>
           <img

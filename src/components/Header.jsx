@@ -24,7 +24,7 @@ export default function Header() {
         <div className="slider">
           <img
             src={SWA1}
-            alt="Photo représentant une femme blonde portant un t-shirt orange et un jean, un micro à la main en train de faire une présentation "
+            alt="Photo représentant une femme blonde, un micro à la main en train de faire une présentation "
             className="img-slider"
           />
           <button onClick={onButtonClick} className="button-slider">

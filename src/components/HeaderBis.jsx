@@ -6,7 +6,10 @@ function HeaderBis() {
   return (
     <header className="headerbis-container">
       <div className="headerbis-grey">
-        <img src={Logo} />
+        <img
+          src={Logo}
+          alt="Logo du site de Fanny Prêtre composé de pictogrammes"
+        />
       </div>
     </header>
   );
