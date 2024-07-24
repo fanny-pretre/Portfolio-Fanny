@@ -9,8 +9,9 @@ import Voiture from "../assets/voiture.webp";
 import SkyHook from "../assets/SkyHook.webp";
 import WhacAMole from "../assets/WhacAMole.webp";
 import HideAway from "../assets/Hide Away.webp";
-import Wait from "../assets/Wait.webp";
 import Geocode from "../assets/Geocode.webp";
+import Lapin from "../assets/Lapin.webp";
+import LeTerrier from "../assets/LeTerrier.webp";
 
 const projects = [
   {
@@ -87,10 +88,23 @@ const projects = [
     imagealt: "Image représentant une voiture électrique",
     imagedetail: Geocode,
     imagedetailalt: "Image représentant une voiture electrique en format icône",
-    labels: "Sass, React JS, MySQL, Harmonia ",
-    desc: "En cours de développement - Avec Geocode, transformez vos trajets en une expérience fluide et efficace. Notre plateforme vous aide à planifier et optimiser vos déplacements en vous proposant des bornes de recharge pour véhicules électriques avec des données mises à jour en temps réel. Geocode s'engage à démocratiser l’usage de la voiture électrique, en adoptant une logique de partage et de durabilité. Rejoignez-nous dans notre mission pour un avenir plus vert et plus connecté. Planifiez, optimisez et partez en toute tranquillité avec Geocode !",
+    labels: "Sass, React JS, MySQL, Express",
+    desc: "Avec Geocode, transformez vos trajets en une expérience fluide et efficace. Notre plateforme vous aide à planifier et optimiser vos déplacements en vous proposant des bornes de recharge pour véhicules électriques avec des données mises à jour en temps réel. Geocode s'engage à démocratiser l’usage de la voiture électrique, en adoptant une logique de partage et de durabilité. Rejoignez-nous dans notre mission pour un avenir plus vert et plus connecté. Planifiez, optimisez et partez en toute tranquillité avec Geocode !",
     github:
       "https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-CrewDragon-P3-GeoCode",
+    prod: "https://geo-code.remote-fr-2.wilders.dev/",
+  },
+  {
+    id: 7,
+    name: "Le Terrier",
+    image: Lapin,
+    imagealt: "Image représentant un lapin",
+    imagedetail: LeTerrier,
+    imagedetailalt:
+      "Image représentant un lapin avec la devise et le logo du Terrier",
+    labels: "Sass, React JS, MySQL, Express",
+    desc: "Le Terrier est une association dédiée à la protection et au bien-être des lapins abandonnés et maltraités. Notre mission est de recueillir, soigner et trouver des foyers aimants pour ces petits animaux souvent méconnus. Nous croyons fermement que chaque lapin mérite une chance de vivre heureux et en sécurité. Grâce à l'engagement de nos bénévoles et au soutien de notre communauté, nous offrons une seconde chance à de nombreux lapins chaque année.",
+    github: "https://github.com/fanny-pretre/CP4",
   },
 ];
 
