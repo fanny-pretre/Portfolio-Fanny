@@ -25,10 +25,10 @@ function About() {
           actuellement en reconversion dans le domaine du Développement Web. Je
           suis passionnée par les technologies et le numérique responsable,
           c'est pourquoi j'ai décidé de me lancer dans une formation en
-          JavaScript auprès de la{" "}
-          <a href="https://www.wildcodeschool.com/fr-fr/">
+          JavaScript auprès de l'{" "}
+          <a href="https://www.eni-ecole.fr/?gad_source=1&gclid=Cj0KCQiAkJO8BhCGARIsAMkswyhFieNvtF3XUyfW5XMjs7LOhkbA0Y-0HM3u9rSnExvbpSUm4sBfij4aAkJHEALw_wcB">
             {" "}
-            Wild Code School.{" "}
+            ENI.{" "}
           </a>
           Si mon profil vous plait, si vous souhaitez échanger ou simplement
           m'envoyer une petite blague de dev n'hésitez pas à me contacter !

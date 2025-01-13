@@ -25,8 +25,8 @@ function Currently() {
             <p>
               {" "}
               Je suis à la recherche d'une alternance ou d'un poste de
-              développeuse junior en JavaScript ou Java pour septembre 2024 sur
-              Niort, La Rochelle ou en full remote.{" "}
+              développeuse junior en JavaScript ou Java pour 2025 sur Niort, La
+              Rochelle ou en full remote.{" "}
             </p>
           </div>
         </div>

@@ -9,10 +9,22 @@ import UBL from "./assets/UBL.webp";
 import UA1 from "./assets/UA.webp";
 import UA2 from "./assets/UA2.webp";
 import BU from "./assets/bu.webp";
+import ENI from "./assets/ENI.webp";
 
 import "./styles/Work.scss";
 
 const items = [
+  {
+    place: "ENI",
+    date: "2025",
+    src: ENI,
+    alt: "Image représentant le campus de l'ENI à Nantes",
+    title: "Formation Concepteur Développeur d’Applications",
+    text: `Préparation au titre professionnel :
+“Concepteur développeur d’applications” -
+Reconnu par l’État Niveau 6 (Niveau Bac +3)`,
+    category: "éducation",
+  },
   {
     place: "Wild Code School",
     date: "2024",
